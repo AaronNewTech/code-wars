@@ -1,6 +1,8 @@
 function findMostFrequent(arr) {
+
   // map to store the number and its frequency
   const frequencyMap = new Map();
+  
   // loop to iterate and populate the frequencyMap with the number and its frequency
   for (const num of arr) {
     frequencyMap.set(num, (frequencyMap.get(num) || 0) + 1);
